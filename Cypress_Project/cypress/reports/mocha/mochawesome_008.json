@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-22T15:04:08.101Z",
+    "end": "2020-03-22T15:05:13.750Z",
+    "duration": 65649,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "93d54c75-bfd8-48dc-91cf-a6c4b10ec892",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\UniverseEstimatesFilters.js",
+      "file": "cypress\\integration\\test\\UniverseEstimatesFilters.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1eb118bb-5dfc-4558-a155-1bf584d97bdb",
+          "title": "Universe Estimates Filters",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Clone Universe Estimates",
+              "fullTitle": "Universe Estimates Filters Clone Universe Estimates",
+              "timedOut": null,
+              "duration": 63763,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"](); //no\nUniverseEstimatesFilters.visitUEPage();\nUniverseEstimatesFilters.clickCloneButton(); //UniverseEstimatesFilters.cloneUE()\nUniverseEstimatesFilters.deleteUEGroups();",
+              "err": {},
+              "uuid": "96b06ee7-1679-42d1-a8f8-57496fa62b73",
+              "parentUUID": "1eb118bb-5dfc-4558-a155-1bf584d97bdb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "96b06ee7-1679-42d1-a8f8-57496fa62b73"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 63763,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

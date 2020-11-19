@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-04-08T08:48:42.200Z",
+    "end": "2020-04-08T08:49:48.071Z",
+    "duration": 65871,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ad62d2e2-2fe6-4661-b807-857ce4e9d398",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\References.js",
+      "file": "cypress\\integration\\test\\References.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cccc633d-eb54-42a3-8b6b-1566fe91472f",
+          "title": "Reference Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 31956,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference();\nreferences.findReference();\nreferences.deleteReference();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '#mat-autocomplete-1', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '#mat-autocomplete-1', but never found it.\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "cb56e3ca-3101-46cd-a40e-2312aefe0766",
+              "parentUUID": "cccc633d-eb54-42a3-8b6b-1566fe91472f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 31722,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference();\nreferences.findReference();\nreferences.addLinks();\nreferences.actualsPage();\nreferences.deleteReference();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '#mat-autocomplete-1', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '#mat-autocomplete-1', but never found it.\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "e4ac3237-de91-4257-8453-8509a3953660",
+              "parentUUID": "cccc633d-eb54-42a3-8b6b-1566fe91472f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cb56e3ca-3101-46cd-a40e-2312aefe0766",
+            "e4ac3237-de91-4257-8453-8509a3953660"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 63678,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

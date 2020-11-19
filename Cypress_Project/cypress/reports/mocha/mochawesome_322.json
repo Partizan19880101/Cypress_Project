@@ -1,0 +1,156 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2020-08-04T21:52:02.573Z",
+    "end": "2020-08-04T21:53:30.736Z",
+    "duration": 88163,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ce0b8b0e-1b9b-4c67-870f-76f31634bf7f",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\Schedules.js",
+      "file": "cypress\\integration\\Spain\\Schedules.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a876167f-08a4-4a9c-9a7b-b8515158b3d5",
+          "title": "Schedules Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Schedules Page",
+              "fullTitle": "Schedules Page Schedules Page",
+              "timedOut": null,
+              "duration": 29820,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA Pavel Test'); //createSchedules.enterTag()\ncreateSchedules.choosePeriod();\ncreateSchedules.clickSave();\ncy.percySnapshot();\ncreateSchedules.deleteSchedule();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find content: '2019' within the element: <span.mat-option-text> but never did.",
+                "estack": "CypressError: Timed out retrying: Expected to find content: '2019' within the element: <span.mat-option-text> but never did.\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "b1e620b9-0aff-4e9e-8bbe-72d9af01098d",
+              "parentUUID": "a876167f-08a4-4a9c-9a7b-b8515158b3d5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by schedule type",
+              "fullTitle": "Schedules Page Search by schedule type",
+              "timedOut": null,
+              "duration": 28866,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA P');\ncreateSchedules.choosePeriod(); //createSchedules.enterTag()\ncreateSchedules.clickSave(); //createSchedules.searchTag()\ncreateSchedules.searchScheduleType();\ncreateSchedules.appluSearch();\ncreateSchedules.deleteafterSearch();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find content: '2019' within the element: <span.mat-option-text> but never did.",
+                "estack": "CypressError: Timed out retrying: Expected to find content: '2019' within the element: <span.mat-option-text> but never did.\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "be135a84-e230-4fec-a0fc-2c35963ec189",
+              "parentUUID": "a876167f-08a4-4a9c-9a7b-b8515158b3d5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by schedule type",
+              "fullTitle": "Schedules Page Search by schedule type",
+              "timedOut": null,
+              "duration": 28909,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA Pa');\ncreateSchedules.choosePeriod();\ncreateSchedules.clickSave();\ncreateSchedules.deleteafterSearch();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find content: '2019' within the element: <span.mat-option-text> but never did.",
+                "estack": "CypressError: Timed out retrying: Expected to find content: '2019' within the element: <span.mat-option-text> but never did.\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "6948cb69-df48-4ad6-a986-e8437f2b39f2",
+              "parentUUID": "a876167f-08a4-4a9c-9a7b-b8515158b3d5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b1e620b9-0aff-4e9e-8bbe-72d9af01098d",
+            "be135a84-e230-4fec-a0fc-2c35963ec189",
+            "6948cb69-df48-4ad6-a986-e8437f2b39f2"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 87595,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

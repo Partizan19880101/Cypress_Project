@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-26T12:03:16.904Z",
+    "end": "2020-03-26T12:05:00.095Z",
+    "duration": 103191,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "45412177-696a-4bc3-b7eb-9f92571a35c7",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\References.js",
+      "file": "cypress\\integration\\test\\References.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "48ba0242-b53b-48fd-a232-127d0db0b7f1",
+          "title": "Reference Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 43524,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference();\nreferences.findReference();\nreferences.deleteReference();",
+              "err": {},
+              "uuid": "a5933ab1-2876-4428-ab85-de1ced42dc25",
+              "parentUUID": "48ba0242-b53b-48fd-a232-127d0db0b7f1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 57085,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference();\nreferences.findReference();\nreferences.addLinks();\nreferences.actualsPage();\nreferences.deleteReference();",
+              "err": {},
+              "uuid": "317d36ce-1e9f-4880-94a0-f9126d5b602b",
+              "parentUUID": "48ba0242-b53b-48fd-a232-127d0db0b7f1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a5933ab1-2876-4428-ab85-de1ced42dc25",
+            "317d36ce-1e9f-4880-94a0-f9126d5b602b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 100609,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-20T14:01:16.017Z",
+    "end": "2020-04-20T14:01:56.644Z",
+    "duration": 40627,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "f6e97736-5ca2-4481-b725-626bb53adae2",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\Calibration.js",
+      "file": "cypress\\integration\\test\\Calibration.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "81a326be-d04a-4c06-8ac4-6e4cab9e3455",
+          "title": "Calibration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Change Global Calibration",
+              "fullTitle": "Calibration Change Global Calibration",
+              "timedOut": null,
+              "duration": 36996,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var calibrations = new _calibration_scripts[\"default\"]();\ncalibrations.enterToSchedule1();\ncalibrations.lockSchedules1();\ncalibrations.openDaypartCalibration();",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-cmd-c36=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n\nBecause this error occurred during a 'before all' hook we are skipping the remaining tests in the current suite: 'Calibration'",
+                "estack": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-cmd-c36=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n\nBecause this error occurred during a 'before all' hook we are skipping the remaining tests in the current suite: 'Calibration'\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at retryActionability (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:120726:19)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at tryFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133369:21)\n    at whenStable (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133404:12)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132948:16\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163582:18)\n    at Promise._fulfill (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163527:18)",
+                "diff": null
+              },
+              "uuid": "6cadee96-7ce0-46d6-9811-c3a2c43fda11",
+              "parentUUID": "81a326be-d04a-4c06-8ac4-6e4cab9e3455",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6cadee96-7ce0-46d6-9811-c3a2c43fda11"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 36996,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-05-21T10:09:57.820Z",
+    "end": "2020-05-21T10:12:05.325Z",
+    "duration": 127505,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f0037c64-7e42-4bd7-af99-4297d75b85ec",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\Schedules.js",
+      "file": "cypress\\integration\\Spain\\Schedules.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "85b34cd4-aa6b-4807-8fc3-f35bd7285481",
+          "title": "Schedules Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Schedules Page",
+              "fullTitle": "Schedules Page Schedules Page",
+              "timedOut": null,
+              "duration": 47586,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA Pavel Test'); //createSchedules.enterTag()\ncreateSchedules.choosePeriod();\ncreateSchedules.clickSave();\ncy.percySnapshot();\ncreateSchedules.deleteSchedule();",
+              "err": {},
+              "uuid": "c64a919f-d869-4dc3-b65b-9dff4452b4c1",
+              "parentUUID": "85b34cd4-aa6b-4807-8fc3-f35bd7285481",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by schedule type",
+              "fullTitle": "Schedules Page Search by schedule type",
+              "timedOut": null,
+              "duration": 40873,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA P');\ncreateSchedules.choosePeriod(); //createSchedules.enterTag()\ncreateSchedules.clickSave(); //createSchedules.searchTag()\ncreateSchedules.searchScheduleType();\ncreateSchedules.appluSearch();\ncreateSchedules.deleteafterSearch();",
+              "err": {},
+              "uuid": "6825ef6e-8240-4515-96ab-5b94a96b83ec",
+              "parentUUID": "85b34cd4-aa6b-4807-8fc3-f35bd7285481",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by schedule type",
+              "fullTitle": "Schedules Page Search by schedule type",
+              "timedOut": null,
+              "duration": 38925,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA Pa');\ncreateSchedules.choosePeriod();\ncreateSchedules.clickSave();\ncreateSchedules.deleteafterSearch();",
+              "err": {},
+              "uuid": "b23c53d5-9142-4426-a362-d57a79428be6",
+              "parentUUID": "85b34cd4-aa6b-4807-8fc3-f35bd7285481",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c64a919f-d869-4dc3-b65b-9dff4452b4c1",
+            "6825ef6e-8240-4515-96ab-5b94a96b83ec",
+            "b23c53d5-9142-4426-a362-d57a79428be6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 127384,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

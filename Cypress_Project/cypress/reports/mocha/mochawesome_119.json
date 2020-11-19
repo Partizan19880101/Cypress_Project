@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-03-25T06:48:02.640Z",
+    "end": "2020-03-25T06:48:54.801Z",
+    "duration": 52161,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a1901d8e-3542-475c-abd3-a7b3fb93d88e",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\References.js",
+      "file": "cypress\\integration\\test\\References.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "48705c81-405e-482d-866c-09bd693b03a5",
+          "title": "Reference Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 49035,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference();\nreferences.findReference();\nreferences.deleteReference();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find content: 'delete' within the element: <mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color> but never did.",
+                "estack": "CypressError: Timed out retrying: Expected to find content: 'delete' within the element: <mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color> but never did.\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "2393cfc4-f80f-4064-901d-68d1ddff7bbb",
+              "parentUUID": "48705c81-405e-482d-866c-09bd693b03a5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "2393cfc4-f80f-4064-901d-68d1ddff7bbb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 49035,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

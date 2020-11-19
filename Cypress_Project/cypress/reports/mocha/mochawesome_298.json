@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-04T15:53:09.706Z",
+    "end": "2020-06-04T15:55:10.984Z",
+    "duration": 121278,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "36582638-6c2a-4930-8393-ccec6eccb65e",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\References.js",
+      "file": "cypress\\integration\\Spain\\References.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "590a55b5-28e9-4480-8b55-390a838cf8d6",
+          "title": "Reference Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 49361,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference('12 TRAMPAS');\nreferences.findReference('12 TRAMPAS');\nreferences.deleteReference('12 TRAMPAS');",
+              "err": {},
+              "uuid": "d40f28cb-495d-419f-887b-70c6001d7f53",
+              "parentUUID": "590a55b5-28e9-4480-8b55-390a838cf8d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 71767,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference('12 TRAMPAS');\nreferences.findReference('12 TRAMPAS');\nreferences.addLinks('fear', 'FEAR THE WALKING DEAD');\nreferences.actualsPage();\nreferences.deleteReference('12 TRAMPAS');",
+              "err": {},
+              "uuid": "ceb91f2d-0dd8-40e2-ab59-a57c1aa2636a",
+              "parentUUID": "590a55b5-28e9-4480-8b55-390a838cf8d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d40f28cb-495d-419f-887b-70c6001d7f53",
+            "ceb91f2d-0dd8-40e2-ab59-a57c1aa2636a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 121128,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

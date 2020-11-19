@@ -1,0 +1,149 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-03-25T07:56:30.470Z",
+    "end": "2020-03-25T07:57:12.606Z",
+    "duration": 42136,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c966c7f2-e42d-4750-a84a-2efb8d79ab84",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\Login.js",
+      "file": "cypress\\integration\\test\\Login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e5045c72-5e99-42ee-b5ef-613079d91b79",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid login Page",
+              "fullTitle": "Login Valid login Page",
+              "timedOut": null,
+              "duration": 17770,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var log = new _login_scripts[\"default\"]();\ncy.wait(3000);\nlog.usernameField('sysadmin');\nlog.passwordFields('!amcnbi321');\nlog.loginButton();\ncy.wait(5000);\ncy.title().should('be.equal', 'Estimator International');\ncy.wait(3000);\ncy.percySnapshot();",
+              "err": {
+                "message": "CypressError: cy.task('percyHealthCheck') failed with the following error:\n\nThe task 'percyHealthCheck' was not handled in the plugins file. The following tasks are registered: failed\n\nFix this in your plugins file here:\nD:\\Pavel Zuyonok\\Applitools\\cypress\\plugins\\index.js\n\nhttps://on.cypress.io/api/task",
+                "estack": "CypressError: cy.task('percyHealthCheck') failed with the following error:\n\nThe task 'percyHealthCheck' was not handled in the plugins file. The following tasks are registered: failed\n\nFix this in your plugins file here:\nD:\\Pavel Zuyonok\\Applitools\\cypress\\plugins\\index.js\n\nhttps://on.cypress.io/api/task\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:129045:21\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "9da05f32-6c74-4a2e-87b6-cfea441f7845",
+              "parentUUID": "e5045c72-5e99-42ee-b5ef-613079d91b79",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "InValid login Page",
+              "fullTitle": "Login InValid login Page",
+              "timedOut": null,
+              "duration": 7788,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var log = new _login_scripts[\"default\"]();\ncy.wait(3000);\nlog.usernameField('sysadmin');\nlog.passwordFields(' ');\nlog.loginButton();\ncy.title().should('be.equal', 'Login');",
+              "err": {},
+              "uuid": "e4874076-4870-4add-9c09-9d8ea6a6c56d",
+              "parentUUID": "e5045c72-5e99-42ee-b5ef-613079d91b79",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "InValid login Page",
+              "fullTitle": "Login InValid login Page",
+              "timedOut": null,
+              "duration": 7126,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var log = new _login_scripts[\"default\"]();\ncy.wait(3000);\nlog.usernameField(' ');\nlog.passwordFields('!amcnbi321');\nlog.loginButton();\ncy.title().should('be.equal', 'Login');",
+              "err": {},
+              "uuid": "649fa62e-00bd-47ca-af2e-0fa9e0cf83d5",
+              "parentUUID": "e5045c72-5e99-42ee-b5ef-613079d91b79",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e4874076-4870-4add-9c09-9d8ea6a6c56d",
+            "649fa62e-00bd-47ca-af2e-0fa9e0cf83d5"
+          ],
+          "failures": [
+            "9da05f32-6c74-4a2e-87b6-cfea441f7845"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 32684,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

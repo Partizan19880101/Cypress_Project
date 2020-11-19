@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-24T07:46:42.167Z",
+    "end": "2020-03-24T07:47:14.102Z",
+    "duration": 31935,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c4feea25-a15f-439a-b942-f5fe8078f564",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\Reports.js",
+      "file": "cypress\\integration\\test\\Reports.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1c2e8476-db3f-4259-8173-1c23bd495503",
+          "title": "Report Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Generate Report",
+              "fullTitle": "Report Page Generate Report",
+              "timedOut": null,
+              "duration": 29913,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var generateReport = new _reports_scripts[\"default\"]();\ngenerateReport.visitReportPage();\ngenerateReport.selectDemoblock();\ngenerateReport.selectTSV();\ngenerateReport.selectSchedule();\ngenerateReport.selectPeriod();\ngenerateReport.gererateReport();\ncy.percySnapshot();",
+              "err": {},
+              "uuid": "a1ab9263-6c4d-4c3f-8f46-7a5c16f7bd9b",
+              "parentUUID": "1c2e8476-db3f-4259-8173-1c23bd495503",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1ab9263-6c4d-4c3f-8f46-7a5c16f7bd9b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29913,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

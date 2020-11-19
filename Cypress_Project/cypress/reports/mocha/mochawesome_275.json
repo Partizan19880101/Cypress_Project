@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-05-21T09:57:12.725Z",
+    "end": "2020-05-21T09:58:21.382Z",
+    "duration": 68657,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4131a7d7-5476-4b05-bc14-427c920537da",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\Calibration.js",
+      "file": "cypress\\integration\\Spain\\Calibration.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ca346c93-ce81-44a6-886d-eea3fd6969ff",
+          "title": "Calibration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Change Global Calibration",
+              "fullTitle": "Calibration Change Global Calibration",
+              "timedOut": null,
+              "duration": 68481,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var calibrations = new _calibration_scripts[\"default\"]();\ncalibrations.enterToSchedule1();\ncalibrations.lockSchedules1();\ncalibrations.openDaypartCalibration();",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: .[rowid=\"1\"] > :nth-child(3) > .number-input > .view-mode-input-container > .view-mode-input",
+                "estack": "Error: Syntax error, unrecognized expression: .[rowid=\"1\"] > :nth-child(3) > .number-input > .view-mode-input-container > .view-mode-input\n    at Function.Sizzle.error (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:64405:8)\n    at Sizzle.tokenize (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:65057:11)\n    at Sizzle.select (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:65484:20)\n    at Function.Sizzle [as find] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:63709:9)\n    at jQuery.fn.init.find (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:65740:11)\n    at new jQuery.fn.init (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:65855:40)\n    at Object.query (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:144403:10)\n    at Object.$$ (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:136842:17)\n    at getElements (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:127903:20)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at resolveElements (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:127952:30)\n    at Context.get (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:127963:14)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137061:33\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)",
+                "diff": null
+              },
+              "uuid": "f7a19432-a065-4505-baa7-bad122ff7c94",
+              "parentUUID": "ca346c93-ce81-44a6-886d-eea3fd6969ff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f7a19432-a065-4505-baa7-bad122ff7c94"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 68481,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

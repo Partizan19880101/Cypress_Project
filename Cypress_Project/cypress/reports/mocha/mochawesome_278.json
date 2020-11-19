@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-05-21T10:01:32.222Z",
+    "end": "2020-05-21T10:02:11.108Z",
+    "duration": 38886,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8fb256f5-d707-46be-9955-bdf32ff4d3d5",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\Reports.js",
+      "file": "cypress\\integration\\Spain\\Reports.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b9a7aabb-16c6-4d6f-ae27-01d4ac3a2e9b",
+          "title": "Report Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Generate Report",
+              "fullTitle": "Report Page Generate Report",
+              "timedOut": null,
+              "duration": 38802,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var generateReport = new _reports_scripts[\"default\"]();\ngenerateReport.visitReportPage();\ngenerateReport.selectDemoblock();\ngenerateReport.selectTSV();\ngenerateReport.selectSchedule();\ngenerateReport.selectPeriod();\ngenerateReport.gererateReport();\ncy.percySnapshot();",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.click() failed because this element is not visible:\n\n<span class=\"mat-select-placeholder ng-tns-c16-23 ng-star-inserted\">SELECT ...</span>\n\nThis element '<span.mat-select-placeholder.ng-tns-c16-23.ng-star-inserted>' is not visible because it has an effective width and height of: '0 x 18' pixels.\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: cy.click() failed because this element is not visible:\n\n<span class=\"mat-select-placeholder ng-tns-c16-23 ng-star-inserted\">SELECT ...</span>\n\nThis element '<span.mat-select-placeholder.ng-tns-c16-23.ng-star-inserted>' is not visible because it has an effective width and height of: '0 x 18' pixels.\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at retryActionability (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:120726:19)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at tryFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133369:21)\n    at whenStable (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133404:12)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132948:16\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163582:18)\n    at Promise._fulfill (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163527:18)",
+                "diff": null
+              },
+              "uuid": "8313e7f0-0b92-4be7-a6c2-76648d034123",
+              "parentUUID": "b9a7aabb-16c6-4d6f-ae27-01d4ac3a2e9b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8313e7f0-0b92-4be7-a6c2-76648d034123"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 38802,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

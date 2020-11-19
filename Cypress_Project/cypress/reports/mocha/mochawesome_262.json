@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-05-19T11:24:16.613Z",
+    "end": "2020-05-19T11:25:36.158Z",
+    "duration": 79545,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2921bbb8-8858-402e-aafa-88e3d69f72c9",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\References.js",
+      "file": "cypress\\integration\\Spain\\References.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59f132ae-ec12-4753-b347-3d8b75804940",
+          "title": "Reference Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 39729,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference('12 TRAMPAS');\nreferences.findReference('12 TRAMPAS');\nreferences.deleteReference('12 TRAMPAS');",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-rct-c48=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-rct-c48=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at retryActionability (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:120726:19)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at tryFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133369:21)\n    at whenStable (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133404:12)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132948:16\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163582:18)\n    at Promise._fulfill (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163527:18)",
+                "diff": null
+              },
+              "uuid": "29a25477-4354-4232-a930-900afd6df386",
+              "parentUUID": "59f132ae-ec12-4753-b347-3d8b75804940",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Reference",
+              "fullTitle": "Reference Page Create Reference",
+              "timedOut": null,
+              "duration": 39685,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var references = new _refernces_scripts[\"default\"]();\nreferences.visitReferencesPage();\nreferences.addReference('12 TRAMPAS');\nreferences.findReference('12 TRAMPAS');\nreferences.addLinks('fear', 'FEAR THE WALKING DEAD');\nreferences.actualsPage();\nreferences.deleteReference('12 TRAMPAS');",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-boc-c48=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-boc-c48=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at retryActionability (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:120726:19)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at tryFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133369:21)\n    at whenStable (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133404:12)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132948:16\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163582:18)\n    at Promise._fulfill (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163527:18)",
+                "diff": null
+              },
+              "uuid": "f1adb50a-714e-46c1-a122-903cd4d9d745",
+              "parentUUID": "59f132ae-ec12-4753-b347-3d8b75804940",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "29a25477-4354-4232-a930-900afd6df386",
+            "f1adb50a-714e-46c1-a122-903cd4d9d745"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 79414,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

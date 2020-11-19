@@ -1,0 +1,248 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 6,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-06-24T15:09:10.765Z",
+    "end": "2020-06-24T15:14:04.805Z",
+    "duration": 294040,
+    "testsRegistered": 8,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "08dfdf57-7a66-4781-8355-9778b757a69b",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\UniverseEstimatesFilters.js",
+      "file": "cypress\\integration\\Spain\\UniverseEstimatesFilters.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "78f097d6-9902-4622-b201-d1d2b55f2936",
+          "title": "Universe Estimates Filters",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "!Create+Search+Edit Universe Estimates",
+              "fullTitle": "Universe Estimates Filters !Create+Search+Edit Universe Estimates",
+              "timedOut": null,
+              "duration": 31761,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"]();\nUniverseEstimatesFilters.visitUEPage();\nUniverseEstimatesFilters.clickCloneButton();\nUniverseEstimatesFilters.searchURGroups();\nUniverseEstimatesFilters.editUEGroups();\ncy.percySnapshot();\nUniverseEstimatesFilters.deleteEditUEGroups();",
+              "err": {},
+              "uuid": "144fd0c4-31c8-485f-ba93-981fa6c7c3d7",
+              "parentUUID": "78f097d6-9902-4622-b201-d1d2b55f2936",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "!Universe Estimates Search UE",
+              "fullTitle": "Universe Estimates Filters !Universe Estimates Search UE",
+              "timedOut": null,
+              "duration": 34910,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"]();\nUniverseEstimatesFilters.visitUEPage();\ncy.get('.selected > .mat-list-item-content').click();\nUniverseEstimatesFilters.searchUE();",
+              "err": {
+                "message": "CypressError: Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.\n\nThe command that returned the promise was:\n\n  > cy.get()\n\nThe cy command you invoked inside the promise was:\n\n  > cy.log()\n\nBecause Cypress commands are already promise-like, you don't need to wrap them or return your own promise.\n\nCypress will resolve your command with whatever the final Cypress command yields.\n\nThe reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.\n\nhttps://on.cypress.io/returning-promise-and-commands-in-another-command",
+                "estack": "CypressError: Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.\n\nThe command that returned the promise was:\n\n  > cy.get()\n\nThe cy command you invoked inside the promise was:\n\n  > cy.log()\n\nBecause Cypress commands are already promise-like, you don't need to wrap them or return your own promise.\n\nCypress will resolve your command with whatever the final Cypress command yields.\n\nThe reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.\n\nhttps://on.cypress.io/returning-promise-and-commands-in-another-command\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.cy.<computed> [as log] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137612:23)\n    at listener (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138826:19)\n    at arrayMap (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:10780:23)\n    at Function.map (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:19695:14)\n    at $Cypress.events.emitMap (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138829:16)\n    at $Cypress.parent.<computed> [as emitMap] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138792:29)\n    at $Cypress.action (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:134202:31)\n    at fail (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137380:22)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137249:14\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)",
+                "diff": null
+              },
+              "uuid": "abff1d96-1047-4ab2-b9db-0630de9228f1",
+              "parentUUID": "78f097d6-9902-4622-b201-d1d2b55f2936",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "!Export Universe Estimates",
+              "fullTitle": "Universe Estimates Filters !Export Universe Estimates",
+              "timedOut": null,
+              "duration": 36107,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"]();\nUniverseEstimatesFilters.visitUEPage();\nUniverseEstimatesFilters.exportUE();",
+              "err": {
+                "message": "CypressError: Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.\n\nThe command that returned the promise was:\n\n  > cy.click()\n\nThe cy command you invoked inside the promise was:\n\n  > cy.log()\n\nBecause Cypress commands are already promise-like, you don't need to wrap them or return your own promise.\n\nCypress will resolve your command with whatever the final Cypress command yields.\n\nThe reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.\n\nhttps://on.cypress.io/returning-promise-and-commands-in-another-command",
+                "estack": "CypressError: Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.\n\nThe command that returned the promise was:\n\n  > cy.click()\n\nThe cy command you invoked inside the promise was:\n\n  > cy.log()\n\nBecause Cypress commands are already promise-like, you don't need to wrap them or return your own promise.\n\nCypress will resolve your command with whatever the final Cypress command yields.\n\nThe reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.\n\nhttps://on.cypress.io/returning-promise-and-commands-in-another-command\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.cy.<computed> [as log] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137612:23)\n    at listener (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138826:19)\n    at arrayMap (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:10780:23)\n    at Function.map (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:19695:14)\n    at $Cypress.events.emitMap (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138829:16)\n    at $Cypress.parent.<computed> [as emitMap] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138792:29)\n    at $Cypress.action (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:134202:31)\n    at fail (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137380:22)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137249:14\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)",
+                "diff": null
+              },
+              "uuid": "df1f3044-5405-4e06-be17-4d6d25baa0b4",
+              "parentUUID": "78f097d6-9902-4622-b201-d1d2b55f2936",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "!Import Universe Estimates",
+              "fullTitle": "Universe Estimates Filters !Import Universe Estimates",
+              "timedOut": null,
+              "duration": 32537,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"]();\nUniverseEstimatesFilters.visitUEPage();\nUniverseEstimatesFilters.clickCloneButton();\nUniverseEstimatesFilters.importUE();\nUniverseEstimatesFilters.deleteUEGroups();",
+              "err": {},
+              "uuid": "b8b6702e-203c-4592-9b85-ef57f187e2df",
+              "parentUUID": "78f097d6-9902-4622-b201-d1d2b55f2936",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "!Edit Universe Estimates",
+              "fullTitle": "Universe Estimates Filters !Edit Universe Estimates",
+              "timedOut": null,
+              "duration": 31902,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"]();\nUniverseEstimatesFilters.visitUEPage();\nUniverseEstimatesFilters.clickCloneButton();\ncy.percySnapshot();\nUniverseEstimatesFilters.searchURGroups();\nUniverseEstimatesFilters.editUE();\nUniverseEstimatesFilters.deleteUEGroups();",
+              "err": {},
+              "uuid": "7eefd639-0557-4a6d-9216-3ce006295fbd",
+              "parentUUID": "78f097d6-9902-4622-b201-d1d2b55f2936",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clone Universe Estimates",
+              "fullTitle": "Universe Estimates Filters Clone Universe Estimates",
+              "timedOut": null,
+              "duration": 31845,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"](); //no\nUniverseEstimatesFilters.visitUEPage();\nUniverseEstimatesFilters.clickCloneButton(); //UniverseEstimatesFilters.cloneUE()\nUniverseEstimatesFilters.deleteUEGroups();",
+              "err": {},
+              "uuid": "61162f32-226f-48b6-82e5-421963ec02d7",
+              "parentUUID": "78f097d6-9902-4622-b201-d1d2b55f2936",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Universe Estimates Filters Reset",
+              "fullTitle": "Universe Estimates Filters Universe Estimates Filters Reset",
+              "timedOut": null,
+              "duration": 45879,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"]();\nUniverseEstimatesFilters.visitUEPage();\nUniverseEstimatesFilters.selectYear();\nUniverseEstimatesFilters.selectQuater();\ncy.percySnapshot();\nUniverseEstimatesFilters.selectResedrButton();",
+              "err": {},
+              "uuid": "88230097-626d-40da-b052-cb3396faaa5e",
+              "parentUUID": "78f097d6-9902-4622-b201-d1d2b55f2936",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Universe Estimates Filters Apply",
+              "fullTitle": "Universe Estimates Filters Universe Estimates Filters Apply",
+              "timedOut": null,
+              "duration": 48320,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var UniverseEstimatesFilters = new _ueFilters_scripts[\"default\"]();\nUniverseEstimatesFilters.visitUEPage();\nUniverseEstimatesFilters.selectYear();\nUniverseEstimatesFilters.selectQuater();\nUniverseEstimatesFilters.selectApplyButton();",
+              "err": {},
+              "uuid": "cdefddfb-19d9-46e4-927b-4c1b6c4dbb7e",
+              "parentUUID": "78f097d6-9902-4622-b201-d1d2b55f2936",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "144fd0c4-31c8-485f-ba93-981fa6c7c3d7",
+            "b8b6702e-203c-4592-9b85-ef57f187e2df",
+            "7eefd639-0557-4a6d-9216-3ce006295fbd",
+            "61162f32-226f-48b6-82e5-421963ec02d7",
+            "88230097-626d-40da-b052-cb3396faaa5e",
+            "cdefddfb-19d9-46e4-927b-4c1b6c4dbb7e"
+          ],
+          "failures": [
+            "abff1d96-1047-4ab2-b9db-0630de9228f1",
+            "df1f3044-5405-4e06-be17-4d6d25baa0b4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 293261,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

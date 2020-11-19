@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-04T15:52:22.863Z",
+    "end": "2020-06-04T15:53:06.896Z",
+    "duration": 44033,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1978e388-7136-4823-a53b-9c81a0b855b1",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\Login.js",
+      "file": "cypress\\integration\\Spain\\Login.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "57fbd0d4-7306-4cd6-aa76-0580c237cf8e",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid login Page",
+              "fullTitle": "Login Valid login Page",
+              "timedOut": null,
+              "duration": 30316,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var log = new _login_scripts[\"default\"]();\ncy.wait(3000);\nlog.usernameField('sysadmin');\nlog.passwordFields('!amcnbi321');\nlog.loginButton();\ncy.wait(5000);\ncy.title().should('be.equal', 'Estimator International');\ncy.wait(8000); // cy.server()\n// cy.route('GET', '/api/v1/user/get_user_info').as('get_user_info')\n// cy.route('POST', '/api/v1/schedules/get_schedules').as('get_schedules')\n// cy.wait(['@get_user_info', '@get_schedules'])\n// .should(data => {\n//     data.forEach (item => expect(item.stats).to.equal(200))\n//     return true\n// })\ncy.wait(8000);\ncy.percySnapshot();",
+              "err": {},
+              "uuid": "9dd08504-33a5-4d52-b541-2f16188476c7",
+              "parentUUID": "57fbd0d4-7306-4cd6-aa76-0580c237cf8e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "InValid login Page",
+              "fullTitle": "Login InValid login Page",
+              "timedOut": null,
+              "duration": 6886,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var log = new _login_scripts[\"default\"]();\ncy.wait(3000);\nlog.usernameField('sysadmin');\nlog.passwordFields(' ');\nlog.loginButton();\ncy.title().should('be.equal', 'Login');",
+              "err": {},
+              "uuid": "26d0d4e9-3d3b-4470-9b44-d1a9cdf99ae0",
+              "parentUUID": "57fbd0d4-7306-4cd6-aa76-0580c237cf8e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "InValid login Page",
+              "fullTitle": "Login InValid login Page",
+              "timedOut": null,
+              "duration": 6764,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var log = new _login_scripts[\"default\"]();\ncy.wait(3000);\nlog.usernameField(' ');\nlog.passwordFields('!amcnbi321');\nlog.loginButton();\ncy.title().should('be.equal', 'Login');",
+              "err": {},
+              "uuid": "d64ae3ab-56bd-4129-841b-3416ff816744",
+              "parentUUID": "57fbd0d4-7306-4cd6-aa76-0580c237cf8e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9dd08504-33a5-4d52-b541-2f16188476c7",
+            "26d0d4e9-3d3b-4470-9b44-d1a9cdf99ae0",
+            "d64ae3ab-56bd-4129-841b-3416ff816744"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 43966,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

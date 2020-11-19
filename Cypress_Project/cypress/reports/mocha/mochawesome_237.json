@@ -1,0 +1,153 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-04-08T08:51:12.969Z",
+    "end": "2020-04-08T08:52:56.066Z",
+    "duration": 103097,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c0c41dd-b04d-4735-a3db-1691412094cc",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\Schedules.js",
+      "file": "cypress\\integration\\test\\Schedules.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "629a4c08-9b24-4ccd-947b-4b5c5ba07cb3",
+          "title": "Schedules Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Schedules Page",
+              "fullTitle": "Schedules Page Schedules Page",
+              "timedOut": null,
+              "duration": 43815,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA Pavel Test'); //createSchedules.enterTag()\ncreateSchedules.choosePeriod();\ncreateSchedules.clickSave();\ncy.percySnapshot();\ncreateSchedules.deleteSchedule();",
+              "err": {},
+              "uuid": "c040b393-9837-4b88-8ae6-e965b5c2c296",
+              "parentUUID": "629a4c08-9b24-4ccd-947b-4b5c5ba07cb3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by schedule type",
+              "fullTitle": "Schedules Page Search by schedule type",
+              "timedOut": null,
+              "duration": 29146,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA P');\ncreateSchedules.choosePeriod(); //createSchedules.enterTag()\ncreateSchedules.clickSave(); //createSchedules.searchTag()\ncreateSchedules.searchScheduleType();\ncreateSchedules.appluSearch();\ncreateSchedules.deleteafterSearch();",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-kxk-c36=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-kxk-c36=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at retryActionability (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:120726:19)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at tryFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133369:21)\n    at whenStable (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133404:12)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132948:16\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163582:18)\n    at Promise._fulfill (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163527:18)",
+                "diff": null
+              },
+              "uuid": "b315e198-8b3c-4ff0-ad4b-2f00ac0a3323",
+              "parentUUID": "629a4c08-9b24-4ccd-947b-4b5c5ba07cb3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search by schedule type",
+              "fullTitle": "Schedules Page Search by schedule type",
+              "timedOut": null,
+              "duration": 27907,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var createSchedules = new _schedules_scripts[\"default\"]();\ncreateSchedules.saveAsMaster();\ncreateSchedules.enterName('QA Pa');\ncreateSchedules.choosePeriod();\ncreateSchedules.clickSave();\ncreateSchedules.deleteafterSearch();",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-wfc-c36=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: cy.click() failed because this element is disabled:\n\n<button _ngcontent-wfc-c36=\"\" class=\"btn mat-raised-button mat-button-base mat-accent\" color=\"accent\" mat-raised-button=\"\" type=\"button\" disabled=\"true\">...</button>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at retryActionability (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:120726:19)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at tryFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133369:21)\n    at whenStable (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133404:12)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132948:16\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163582:18)\n    at Promise._fulfill (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163527:18)",
+                "diff": null
+              },
+              "uuid": "6dcfc999-0fdb-4569-9ed2-d680e552fc07",
+              "parentUUID": "629a4c08-9b24-4ccd-947b-4b5c5ba07cb3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c040b393-9837-4b88-8ae6-e965b5c2c296"
+          ],
+          "failures": [
+            "b315e198-8b3c-4ff0-ad4b-2f00ac0a3323",
+            "6dcfc999-0fdb-4569-9ed2-d680e552fc07"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 100868,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

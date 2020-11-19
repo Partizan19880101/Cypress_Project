@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-03-23T11:27:26.012Z",
+    "end": "2020-03-23T11:28:00.865Z",
+    "duration": 34853,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "46caebd9-bcb2-4463-a9dc-e96a07f963c1",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\Reports.js",
+      "file": "cypress\\integration\\test\\Reports.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "18a6db1b-8039-4e55-9c8a-a27c5bf90e0f",
+          "title": "Report Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Generate Report",
+              "fullTitle": "Report Page Generate Report",
+              "timedOut": null,
+              "duration": 671,
+              "state": "failed",
+              "speed": "slow",
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var generateReport = new _reports_scripts[\"default\"]();\ngenerateReport.visitReportPage();\ngenerateReport.selectDemoblock();\ngenerateReport.selectTSV();\ngenerateReport.selectSchedule();\ngenerateReport.selectPeriod();\ngenerateReport.gererateReport();",
+              "err": {
+                "message": "TypeError: Attempted to wrap error which is already wrapped\n\nBecause this error occurred during a 'after each' hook we are skipping all of the remaining tests.",
+                "estack": "TypeError: Attempted to wrap error which is already wrapped\n\nBecause this error occurred during a 'after each' hook we are skipping all of the remaining tests.\n    at checkWrappedMethod (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:115826:21)\n    at wrapMethod (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:115874:13)\n    at Function.spy (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:115004:16)\n    at Sandbox.spy (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:114632:35)\n    at Context.spy (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:124567:22)\n    at Object.cy.<computed> [as spy] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137548:19)\n    at getRet (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:125261:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at Context.thenFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:125275:23)\n    at Context.then (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:125647:21)\n    at Context.<anonymous> (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137585:21)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137061:33\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n--------------\nError: Stack Trace for original\n    at wrapMethod (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:115902:26)\n    at Function.spy (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:115004:16)\n    at Sandbox.spy (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:114632:35)\n    at Context.spy (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:124567:22)\n    at Object.cy.<computed> [as spy] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137548:19)\n    at getRet (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:125261:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at Context.thenFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:125275:23)\n    at Context.then (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:125647:21)\n    at Context.<anonymous> (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137585:21)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137061:33\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromiseCtx (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163495:10)",
+                "diff": null
+              },
+              "uuid": "65b13690-be3f-4bb1-a185-bb43b49a48ac",
+              "parentUUID": "18a6db1b-8039-4e55-9c8a-a27c5bf90e0f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "65b13690-be3f-4bb1-a185-bb43b49a48ac"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 671,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

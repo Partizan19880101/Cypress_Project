@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-04-07T15:21:06.359Z",
+    "end": "2020-04-07T15:22:11.788Z",
+    "duration": 65429,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7ba98d97-21f5-47d7-baea-d65d36fa1f9f",
+      "title": "",
+      "fullFile": "cypress\\integration\\test\\Calibration.js",
+      "file": "cypress\\integration\\test\\Calibration.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "68f1bfc7-7418-45a6-a257-3fe743bde641",
+          "title": "Calibration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Change Calibration",
+              "fullTitle": "Calibration Change Calibration",
+              "timedOut": null,
+              "duration": 61530,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var calibrations = new _calibration_scripts[\"default\"]();\ncalibrations.enterToSchedule1();\ncalibrations.lockSchedules1();\ncalibrations.openGlobalCalibration();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: '.mat-form-field ng-tns-c14-103', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: '.mat-form-field ng-tns-c14-103', but never found it.\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "1204938b-65c9-4ecd-85af-e47f1762ae74",
+              "parentUUID": "68f1bfc7-7418-45a6-a257-3fe743bde641",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Change Global Calibration",
+              "fullTitle": "Calibration Change Global Calibration",
+              "timedOut": null,
+              "duration": 901,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var calibrations = new _calibration_scripts[\"default\"]();\ncalibrations.enterToSchedule1();\ncalibrations.lockSchedules1();\ncalibrations.openDaypartCalibration();",
+              "err": {
+                "message": "ReferenceError: click is not defined",
+                "estack": "ReferenceError: click is not defined\n    at Calibration.openDaypartCalibration (https://develop.auroravts.com/__cypress/tests?p=cypress\\integration\\test\\Calibration.js-101:82:10)\n    at Context.<anonymous> (https://develop.auroravts.com/__cypress/tests?p=cypress\\integration\\test\\Calibration.js-101:318:18)",
+                "diff": null
+              },
+              "uuid": "d37bfd3b-2328-4ffd-84ad-4373548af7d5",
+              "parentUUID": "68f1bfc7-7418-45a6-a257-3fe743bde641",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1204938b-65c9-4ecd-85af-e47f1762ae74",
+            "d37bfd3b-2328-4ffd-84ad-4373548af7d5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 62431,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

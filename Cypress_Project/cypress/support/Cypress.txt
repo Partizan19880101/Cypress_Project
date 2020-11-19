@@ -1,0 +1,54 @@
+npx cypress open
+npx cypress run --record --key a1776ea6-8468-4997-871e-52e94fd7b9f8
+npx percy exec -- cypress run --record --key a1776ea6-8468-4997-871e-52e94fd7b9f8
+npx percy exec -- cypress run --spec cypress/integration/Spain/**/* --record --key a1776ea6-8468-4997-871e-52e94fd7b9f8
+java -jar jenkins.war
+--spec "cypress/integration/Apple/**/*"
+npm run test
+
+npx cypress run --spec (path) -1 test
+docker-compose -f docker-compose.yml up
+npm install --save-dev cypress-xpath
+npm install --save-dev cypress-file-upload
+npm install --save-dev @percy/cypress
+npx percy exec -- cypress run
+npx percy exec -- cypress run -spec cypress\integration\test\Reports.js
+npx cypress run --browser=chrome
+
+npx marge mochareports/*.json -f report -o mochareports
+npx mochawesome-merge --reportDir cypress/reports/mocha > Cypress\EstimatorInternational\mochareports\report.json
+
+docker stop $(docker ps -a -q) остановить все контейнеры
+docker rm $(docker ps -a -q) удалить все контейнеры
+https://jwt.io/
+
+npm install --save-dev @percy/cypress
+npx percy exec -- cypress run --spec 
+cypress run --record --group 1x-electron
+cypress run --record --group 2x-chrome --browser chrome --parallel
+cypress run --record --group 4x-electron --parallel
+set APPLITOOLS_API_KEY='OB7YStCZHhtu0QM97v1DI1029E48xpwXRxloNu102wELJDG8110'
+npm install @applitools/eyes-cypress --save-dev
+npm install --save-dev storybook-chromatic
+npx chromatic --app-code=4zmjwgti7xr
+
+docker build -t cypress . -rwxr-xr-x
+docker-compose up
+
+
+ ssh-keygen
+
+
+eval `ssh-agent`
+ssh-add /c/Users/Pavel/.ssh/myk
+1877809
+
+
+
+cd "путь в рабоую папку"
+git clone "путь в git hub.com"
+git pull
+git add .
+git commit -m "02/05/2020"
+git push origin
+

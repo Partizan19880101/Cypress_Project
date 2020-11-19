@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="228.8870" tests="8" failures="2">
+  <testsuite name="Root Suite" timestamp="2020-08-04T21:53:36" tests="0" file="cypress\integration\Spain\UniverseEstimatesFilters.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Universe Estimates Filters" timestamp="2020-08-04T21:53:36" tests="8" time="228.8870" failures="2">
+    <testcase name="Universe Estimates Filters !Create+Search+Edit Universe Estimates" time="33.5030" classname="!Create+Search+Edit Universe Estimates">
+    </testcase>
+    <testcase name="Universe Estimates Filters !Universe Estimates Search UE" time="0.0000" classname="!Universe Estimates Search UE">
+      <failure message="Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.
+
+The command that returned the promise was:
+
+  &gt; cy.get()
+
+The cy command you invoked inside the promise was:
+
+  &gt; cy.log()
+
+Because Cypress commands are already promise-like, you don&apos;t need to wrap them or return your own promise.
+
+Cypress will resolve your command with whatever the final Cypress command yields.
+
+The reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.
+
+https://on.cypress.io/returning-promise-and-commands-in-another-command" type="CypressError"><![CDATA[CypressError: Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.
+
+The command that returned the promise was:
+
+  > cy.get()
+
+The cy command you invoked inside the promise was:
+
+  > cy.log()
+
+Because Cypress commands are already promise-like, you don't need to wrap them or return your own promise.
+
+Cypress will resolve your command with whatever the final Cypress command yields.
+
+The reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.
+
+https://on.cypress.io/returning-promise-and-commands-in-another-command
+    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)
+    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)
+    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)
+    at Object.cy.<computed> [as log] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137612:23)
+    at listener (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138826:19)
+    at arrayMap (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:10780:23)
+    at Function.map (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:19695:14)
+    at $Cypress.events.emitMap (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138829:16)
+    at $Cypress.parent.<computed> [as emitMap] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138792:29)
+    at $Cypress.action (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:134202:31)
+    at fail (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137380:22)
+    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137249:14
+    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)
+    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)
+    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)
+    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)]]></failure>
+    </testcase>
+    <testcase name="Universe Estimates Filters !Export Universe Estimates" time="0.0000" classname="!Export Universe Estimates">
+      <failure message="Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.
+
+The command that returned the promise was:
+
+  &gt; cy.click()
+
+The cy command you invoked inside the promise was:
+
+  &gt; cy.log()
+
+Because Cypress commands are already promise-like, you don&apos;t need to wrap them or return your own promise.
+
+Cypress will resolve your command with whatever the final Cypress command yields.
+
+The reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.
+
+https://on.cypress.io/returning-promise-and-commands-in-another-command" type="CypressError"><![CDATA[CypressError: Cypress detected that you returned a promise from a command while also invoking one or more cy commands in that promise.
+
+The command that returned the promise was:
+
+  > cy.click()
+
+The cy command you invoked inside the promise was:
+
+  > cy.log()
+
+Because Cypress commands are already promise-like, you don't need to wrap them or return your own promise.
+
+Cypress will resolve your command with whatever the final Cypress command yields.
+
+The reason this is an error instead of a warning is because Cypress internally queues commands serially whereas Promises execute as soon as they are invoked. Attempting to reconcile this would prevent Cypress from ever resolving.
+
+https://on.cypress.io/returning-promise-and-commands-in-another-command
+    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)
+    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)
+    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)
+    at Object.cy.<computed> [as log] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137612:23)
+    at listener (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138826:19)
+    at arrayMap (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:10780:23)
+    at Function.map (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:19695:14)
+    at $Cypress.events.emitMap (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138829:16)
+    at $Cypress.parent.<computed> [as emitMap] (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138792:29)
+    at $Cypress.action (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:134202:31)
+    at fail (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137380:22)
+    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:137249:14
+    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)
+    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)
+    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)
+    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)]]></failure>
+    </testcase>
+    <testcase name="Universe Estimates Filters !Import Universe Estimates" time="33.6710" classname="!Import Universe Estimates">
+    </testcase>
+    <testcase name="Universe Estimates Filters !Edit Universe Estimates" time="33.1850" classname="!Edit Universe Estimates">
+    </testcase>
+    <testcase name="Universe Estimates Filters Clone Universe Estimates" time="33.0510" classname="Clone Universe Estimates">
+    </testcase>
+    <testcase name="Universe Estimates Filters Universe Estimates Filters Reset" time="47.1750" classname="Universe Estimates Filters Reset">
+    </testcase>
+    <testcase name="Universe Estimates Filters Universe Estimates Filters Apply" time="48.3020" classname="Universe Estimates Filters Apply">
+    </testcase>
+  </testsuite>
+</testsuites>

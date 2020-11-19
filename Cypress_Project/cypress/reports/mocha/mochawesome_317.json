@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-08-04T21:46:54.552Z",
+    "end": "2020-08-04T21:47:50.374Z",
+    "duration": 55822,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "60b3cb8f-8352-48df-8d90-d06123bd1114",
+      "title": "",
+      "fullFile": "cypress\\integration\\Spain\\Calibration.js",
+      "file": "cypress\\integration\\Spain\\Calibration.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eecddd63-1bdb-49c4-b70a-46a8fd2f6256",
+          "title": "Calibration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Change Global Calibration",
+              "fullTitle": "Calibration Change Global Calibration",
+              "timedOut": null,
+              "duration": 55713,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var calibrations = new _calibration_scripts[\"default\"]();\ncalibrations.enterToSchedule1();\ncalibrations.lockSchedules1();\ncalibrations.openDaypartCalibration();",
+              "err": {
+                "message": "CypressError: Timed out retrying: cy.click() failed because this element:\n\n<button _ngcontent-nmb-c265=\"\" mat-raised-button=\"\" color=\"warn\" class=\"mat-focus-indicator btn mat-button mat-raised-button mat-button-base mat-warn ng-star-inserted\">...</button>\n\nis being covered by another element:\n\n<h1 _ngcontent-nmb-c258=\"\" mat-dialog-title=\"\" class=\"mat-dialog-title title\" id=\"mat-dialog-title-2\">SCHEDUL...</h1>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: cy.click() failed because this element:\n\n<button _ngcontent-nmb-c265=\"\" mat-raised-button=\"\" color=\"warn\" class=\"mat-focus-indicator btn mat-button mat-raised-button mat-button-base mat-warn ng-star-inserted\">...</button>\n\nis being covered by another element:\n\n<h1 _ngcontent-nmb-c258=\"\" mat-dialog-title=\"\" class=\"mat-dialog-title title\" id=\"mat-dialog-title-2\">SCHEDUL...</h1>\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at cypressErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:138625:3)\n    at Object.retry (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132905:19)\n    at retryActionability (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:120726:19)\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Function.Promise.attempt.Promise.try (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:162740:29)\n    at tryFn (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133369:21)\n    at whenStable (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:133404:12)\n    at https://develop.auroravts.com/__cypress/runner/cypress_runner.js:132948:16\n    at tryCatcher (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163582:18)\n    at Promise._fulfill (https://develop.auroravts.com/__cypress/runner/cypress_runner.js:163527:18)",
+                "diff": null
+              },
+              "uuid": "695f100f-2b42-4fcf-9625-6c84ce4fcac0",
+              "parentUUID": "eecddd63-1bdb-49c4-b70a-46a8fd2f6256",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "695f100f-2b42-4fcf-9625-6c84ce4fcac0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 55713,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

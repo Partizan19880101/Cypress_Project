@@ -1,0 +1,20 @@
+{
+  "chromeWebSecurity": false,
+  "video": false,
+  "responseTimeout": 600000,
+  "baseUrl": "https://develop.auroravts.com/uat/est_int/main/uat/est_int",
+  
+  "viewportWidth": 1200,
+  "viewportHeight": 800,
+  
+  "projectId": "bnmabp",
+  "screenshotsFolder": "cypress/screenshots",
+  "env": {
+      "username": "sysadmin",
+      "password": "!amcnbi321"
+    },
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+    "configFile": "mocha-config.json"
+  } 
+}

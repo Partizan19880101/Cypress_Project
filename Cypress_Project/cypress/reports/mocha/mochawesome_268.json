@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-05-20T10:25:03.435Z",
+    "end": "2020-05-20T10:25:04.004Z",
+    "duration": 569,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "7df0d4cf-5850-4a0d-95cd-7c5c7997e0df",
+      "title": "",
+      "fullFile": "cypress\\integration\\Chech\\Calibration.js",
+      "file": "cypress\\integration\\Chech\\Calibration.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "620dcca6-8cb3-423f-b6d6-0c66080c70b8",
+          "title": "Calibration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Change Global Calibration",
+              "fullTitle": "Calibration Change Global Calibration",
+              "timedOut": null,
+              "duration": 529,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var calibrations = new _calibration_scripts[\"default\"]();\ncalibrations.enterToSchedule1();\ncalibrations.lockSchedules1();\ncalibrations.openDaypartCalibration();",
+              "err": {
+                "message": "ReferenceError: loginPage is not defined\n\nBecause this error occurred during a 'before all' hook we are skipping the remaining tests in the current suite: 'Calibration'",
+                "estack": "ReferenceError: loginPage is not defined\n\nBecause this error occurred during a 'before all' hook we are skipping the remaining tests in the current suite: 'Calibration'\n    at Context.<anonymous> (https://develop.auroravts.com/__cypress/tests?p=cypress\\integration\\Chech\\Calibration.js-869:50:5)",
+                "diff": null
+              },
+              "uuid": "6f5ac333-6a63-489e-94ab-aec0e29acd26",
+              "parentUUID": "620dcca6-8cb3-423f-b6d6-0c66080c70b8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6f5ac333-6a63-489e-94ab-aec0e29acd26"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 529,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
